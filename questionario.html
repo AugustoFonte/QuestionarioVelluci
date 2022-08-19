@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário Velluci</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Questionário Velluci</h1>
+      <p id="description" class="description text-center">Obrigado por disponibilizares um pouquinho do teu tempo para nos ajudar a melhorar</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nome</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Coloca teu nome aqui" required>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="name">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Coloca teu email aqui" required>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="name">Idade</label>
+        <input type="number" name="age" id="number" class="form-control" min="10" max="99" placeholder="Coloca tua idade aqui" required>
+      </div>
+
+      <div class="form-group">
+        <p>Recomendarias a Velluci a um amigo/a?</p>
+        <label>
+          <input name="user-recommend" value="Sim" type="radio" class="input-radio" checked>
+          Sim
+        </label>
+
+        <label>
+          <input name="user-recommend" value="Não" type="radio" class="input-radio">
+          Não
+        </label>
+
+    
+      </div>
+      <div class="form-group">
+        <p>Tiveste algum problema em comprar no site Velluci?</p>
+        <select id="dropdown" name="Compra" class="form-control" required>
+          <option disabled selected value>Escolhe uma opção</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Se sim, ao contactar o suporte foi rápida a solução?</p>
+        <select id="dropdown2" name="problema" class="form-control">
+          <option disabled selected value>Escolhe uma opção</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Que tipo de peças gostaria de ver mais na Velluci?<span class="clue">Podes selecionar mais que uma opção</span></p>
+      </div>
+
+      <label><input name="basicos" value="preferencia" type="checkbox" class="input-checkbox">Básicos</label>
+      <label><input name="sublimados" value="preferencia" type="checkbox" class="input-checkbox">Sublimados</label>
+      <label><input name="seamless" value="preferencia" type="checkbox" class="input-checkbox">Seamless</label>
+      <label><input name="padel" value="preferencia" type="checkbox" class="input-checkbox">Padel</label>
+      <label><input name="fatoDetreino" value="preferencia" type="checkbox" class="input-checkbox">Fatos de Treino</label>
+      <label><input name="confy" value="preferencia" type="checkbox" class="input-checkbox">Linha Confy</label>
+      <label><input name="running" value="preferencia" type="checkbox" class="input-checkbox">Running</label>
+      <label><input name="outro" value="preferencia" type="checkbox" class="input-checkbox">Outro.. (Escrever na caixa de comentário)</label>
+
+      <div class="form-group">
+        <p>Alguma sugestão que nos queira dar?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Escreve o comentário aqui..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
